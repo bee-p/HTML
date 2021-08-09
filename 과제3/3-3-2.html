@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Create</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            //이벤트를 연결
+            $(document).ready(function () {
+                //10회 반복
+                for (var i = 0; i < 10; i++)
+                {
+                    //문서 객체 생성
+                    $('<h1>Create Document Object By jQuery + ' + i + '</h1>').appendTo('body');
+                    $('h1').css({ color: 'red', backgroundColor: 'black'})
+                };
+            });
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

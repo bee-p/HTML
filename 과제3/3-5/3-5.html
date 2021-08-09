@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LightBox</title>
+        <link rel="stylesheet" href="jquery.lightbox.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="jquery.lightbox.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('a[rel="lightbox"]').lightBox({
+                    imageLoading: 'lightbox-ico-loading.gif',
+                    imageBtnClose: 'lightbox-btn-close.gif',
+                    imageBtnPrev: 'lightbox-btn-prev.gif',
+                    imageBtnNext: 'lightbox-btn-next.gif',
+                    imageBlank: 'lightbox-blank.gif'
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <a rel="lightbox" href="image1.jpg" data-lightbox="imageGroup">LightBox</a>
+        <a rel="lightbox" href="image2.jpg" data-lightbox="imageGroup">LightBox</a>
+        <a rel="lightbox" href="image3.jpg" data-lightbox="imageGroup">LightBox</a>
+    </body>
+</html>
